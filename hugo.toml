@@ -1,0 +1,4 @@
+baseURL = 'https://ytreza.dev/blog/'
+languageCode = 'fr'
+title = 'ytreza.dev'
+theme = 'ananke'
