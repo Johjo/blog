@@ -1,4 +1,4 @@
-baseURL = 'https://ytreza.dev/blog/'
+baseURL = 'https://blog.ytreza.dev/'
 languageCode = 'fr'
 title = 'ytreza.dev'
 theme = 'ananke'
