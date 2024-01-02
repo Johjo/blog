@@ -6,7 +6,6 @@
 {{ define "main" }}
   {{ $section := .Site.GetPage "section" .Section }}
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    coucou
     <header class="mt4 w-100">
       <aside class="instapaper_ignoref b helvetica tracked ttu">
           {{/*
@@ -64,7 +63,6 @@
     <aside class="w-30-l mt6-l">
       {{- partial "menu-contextual.html" . -}}
     </aside>
-
   </article>
   {{ partial "article/article.html" .}}
 {{ end }}
