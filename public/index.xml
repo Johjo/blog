@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ytreza.dev</title>
-    <link>https://ytreza.dev/blog/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on ytreza.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <lastBuildDate>Sat, 30 Dec 2023 15:14:24 +0100</lastBuildDate>
-    <atom:link href="https://ytreza.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
-      <link>https://ytreza.dev/blog/posts/hello-world/</link>
+      <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Sat, 30 Dec 2023 15:14:24 +0100</pubDate>
-      <guid>https://ytreza.dev/blog/posts/hello-world/</guid>
-      <description>Hello world </description>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>Hello world Test 1238</description>
     </item>
   </channel>
 </rss>

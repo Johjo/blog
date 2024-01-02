@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>Hello World | ytreza.dev</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Hello world ">
+    <meta name="description" content="Hello world Test 1238">
     <meta name="generator" content="Hugo 0.121.1">
     
     
@@ -16,7 +16,7 @@
     
 
     
-<link rel="stylesheet" href="/blog/ananke/css/main.min.css" >
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
 
 
 
@@ -30,24 +30,24 @@
     
 
     
-      <link rel="canonical" href="https://ytreza.dev/blog/posts/hello-world/">
+      <link rel="canonical" href="http://localhost:1313/posts/hello-world/">
     
 
     <meta property="og:title" content="Hello World" />
-<meta property="og:description" content="Hello world " />
+<meta property="og:description" content="Hello world Test 1238" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ytreza.dev/blog/posts/hello-world/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/hello-world/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-12-30T15:14:24+01:00" />
 <meta property="article:modified_time" content="2023-12-30T15:14:24+01:00" />
 
 <meta itemprop="name" content="Hello World">
-<meta itemprop="description" content="Hello world "><meta itemprop="datePublished" content="2023-12-30T15:14:24+01:00" />
+<meta itemprop="description" content="Hello world Test 1238"><meta itemprop="datePublished" content="2023-12-30T15:14:24+01:00" />
 <meta itemprop="dateModified" content="2023-12-30T15:14:24+01:00" />
-<meta itemprop="wordCount" content="2">
+<meta itemprop="wordCount" content="4">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Hello World"/>
-<meta name="twitter:description" content="Hello world "/>
+<meta name="twitter:description" content="Hello world Test 1238"/>
 
-	
+	<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/article.css" />
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -60,7 +60,7 @@
     <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="/blog/" class="f3 fw2 hover-white no-underline white-90 dib">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
       
         ytreza.dev
       
@@ -119,6 +119,7 @@
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="hello-world">Hello world</h1>
+<p>Test 1238</p>
 <ul class="pa0">
   
 </ul>
@@ -134,14 +135,76 @@
 
 
 </aside>
-
   </article>
+  
+<div class="article-content">
+  <h2>Comments</h2>
+  <p>You can use your Mastodon account to reply to this <a class="link" href="https://mastodon.social/@johjo/111669917968624183">post</a>.</p>
+  <p><a class="button" href="https://mastodon.social/interact/111669917968624183?type=reply">Reply</a></p>
+  <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
+  <noscript><p>You need JavaScript to view the comments.</p></noscript>
+  <script src="/assets/js/purify.min.js"></script>
+  <script type="text/javascript">
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+   }
+
+    document.getElementById("load-comment").addEventListener("click", function() {
+      document.getElementById("load-comment").innerHTML = "Loading";
+      fetch('https://mastodon.social/api/v1/statuses/111669917968624183/context')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          if(data['descendants'] &&
+             Array.isArray(data['descendants']) && 
+            data['descendants'].length > 0) {
+              document.getElementById('mastodon-comments-list').innerHTML = "";
+              data['descendants'].forEach(function(reply) {
+                reply.account.display_name = escapeHtml(reply.account.display_name);
+                reply.account.emojis.forEach(emoji => {
+                  reply.account.display_name = reply.account.display_name.replace(`:${emoji.shortcode}:`,
+                    `<img src="${escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
+                });
+                mastodonComment =
+                  `<div class="mastodon-comment">
+                     <div class="avatar">
+                       <img src="${escapeHtml(reply.account.avatar_static)}" height=60 width=60 alt="">
+                     </div>
+                     <div class="content">
+                       <div class="author">
+                         <a href="${reply.account.url}" rel="nofollow">
+                           <span>${reply.account.display_name}</span>
+                           <span class="disabled">${escapeHtml(reply.account.acct)}</span>
+                         </a>
+                         <a class="date" href="${reply.uri}" rel="nofollow">
+                           ${reply.created_at.substr(0, 10)}
+                         </a>
+                       </div>
+                       <div class="mastodon-comment-content">${reply.content}</div> 
+                     </div>
+                   </div>`;
+                document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true}));
+              });
+          } else {
+            document.getElementById('mastodon-comments-list').innerHTML = "<p>Not comments found</p>";
+          }
+        });
+      });
+  </script>
+</div>
+
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://ytreza.dev/blog/" >
-    &copy;  ytreza.dev 2023 
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  ytreza.dev 2024 
   </a>
     <div>
 <div class="ananke-socials">
