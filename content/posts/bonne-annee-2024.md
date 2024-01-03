@@ -5,7 +5,7 @@ draft: false
 comments:
   host: mastodon.social
   username: johjo
-  id: 
+  id: 111690756095843074
 ---
 
 Je commence l'année 2024 en créant un nouveau blog. J'en profite d'ailleurs pour te souhaiter une excellente année.
