@@ -1,7 +1,7 @@
 ---
 title: 'Bonne année 2024'
 date: 2024-01-03T07:37:28+01:00
-draft: true
+draft: false
 comments:
   host: mastodon.social
   username: johjo
