@@ -12,7 +12,7 @@ Je commence l'année 2024 en créant un nouveau blog. J'en profite d'ailleurs po
 
 J'ouvre ce nouveau blog pour mettre en évidence un changement dans ma carrière. Nouveau job, nouvelles technos, nouveaux apprentissages. Mais toujours passionné de TDD, d'archi hexagonale, de clean code, de conférences, de partage, de dojos.
 
-Pour mon nouveau job, j'ai attaqué il y a quelques mois chez [Agicap](agicap.com) et ça a été un sacré changement pour moi. Découverte d'une nouvelle équipe, d'une nouvelle manière de travailler.
+Pour mon nouveau job, j'ai attaqué il y a quelques mois chez [Agicap](https://agicap.com/) et ça a été un sacré changement pour moi. Découverte d'une nouvelle équipe, d'une nouvelle manière de travailler.
 
 Suite à ce changement, je (re)découvre dotnet avec c#, j'en ai profité pour mettre à jour mes connaissances sur git (et ça ne fait pas de mal), sur postgresql, le développement back, sa théorie et tous les outils qui vont avec. Je fais aussi un saut dans le DDD (Domain Driven Design).
 
