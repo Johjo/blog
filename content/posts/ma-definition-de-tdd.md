@@ -19,9 +19,7 @@ Les deux notions suivantes sont les bases de ma définition de TDD. Il s'agit de
 
 ### Red - Green - Refactoring
 
-
-
-
+![Le cycle TDD - Red - Green - Refactoring](/images/CycleTDD.png)
 
 ### Les 3 lois de TDD
 
