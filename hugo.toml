@@ -2,3 +2,5 @@ baseURL = 'https://johjo.github.io'
 languageCode = 'fr'
 title = 'ytreza.dev'
 theme = 'ananke'
+staticDir = ['static', 'blog/static']
+
