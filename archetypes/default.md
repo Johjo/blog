@@ -1,7 +1,7 @@
 ---
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 date: {{ .Date }}
-draft: false
+draft: true
 comments:
   host: mastodon.social
   username: johjo
