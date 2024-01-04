@@ -8,4 +8,4 @@ comments:
   id: 
 ---
 
-
+Dans ce blog, je vais essentiellement parler du Test Driven Development ou TDD. Malheureusement, plus cette méthode est utilisée et plus le nombre de définitions augmente.
