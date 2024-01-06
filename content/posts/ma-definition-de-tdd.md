@@ -63,6 +63,9 @@ C'est ce que j'applique tous les jours, mais je te propose de pousser la vision 
 J'essaie constamment de revisiter le cycle Red - Green - Refactoring. Si tu as déjà échangé avec moi, tu constateras que je l'ai formulé de plusieurs manières différentes, j'ai créé des schémas du cycle avec plus d'étapes, plus d'états. Mais je reste quand même très fortement attaché aux deux concepts que l'on a vu plus haut.
 
 ### La véritable essence de TDD
+
+#### Focus sur une seule chose
+
 Pour moi, TDD est une silver bullet car je l'utilise au quotidien, même quand je ne code pas. Et lorsque je code, je considère que je fais du TDD, même si je n'utilise pas de tests automatiques. Pour arriver à cette vision, j'ai reformulé le cycle TDD sous une autre forme : 
 
 - *Red* : je constate qu'il y a quelque chose qui ne convient pas. S'il y a plusieurs choses qui ne conviennent pas, j'en choisi une et j'ignore les autres.
@@ -73,7 +76,29 @@ Cette vision me permet d'être minimaliste et d'être focus sur une seule chose 
 
 Et c'est là toute la force de TDD, c'est une méthode qui permet de se concentrer sur un seul problème à la fois. Et cela permet de prendre son temps pour faire les choses correctement. Il est plus simple de jongler avec une seule balle qu'avec deux.
 
-Et si j'ai parlé de ce qu'est TDD pour moi, je vais aborder ce que n'est pas TDD pour moi.
+TDD est donc un processus de développement **itératif**.
+
+Je reviens sur l'étape du *red*, cette étape où l'on constate que quelque chose ne convient pas. Il y a tout le temps plein de choses qui ne conviennent pas. Il y en aura toujours. Et c'est une bonne chose, car sans ce constat, il n'y aurait pas d'action. Mais comment savoir quelle est la chose à faire ? 
+
+Et bien, à moins de savoir lire le futur, c'est impossible. C'est pourquoi j'applique la stratégie des baby steps lorsque je fais du TDD. 
+
+#### Baby step
+
+En français, on peut traduire les *baby steps* par *petits pas*.
+
+Imaginons que je veuille faire une marche en partant de chez moi (Valence) pour aller à Paris. Je n'ai qu'une seule chose à faire, aller d'un point A à un point B. Mais il y a environ 537 kilomètre. Ce n'est pas possible de le faire. En fait, pour faire cette marche, et en simplifiant, je devrais faire environ 800000 pas 😅. Choisir les bons devient très important, car si je ne vais pas dans la bonne direction, je peux me retrouver en Italie. de plus, je ne peux pas faire n'importe quel pas, je ne peux faire que ceux qui partent de mon emplacement actuel.
+
+Je vais faire la même chose lorsque j'écris du code. Je vais partir de mon code actuel et essayer de déterminer quelle est la prochaine modification à apporter.
+
+Cependant, je ne pars pas du code de production (mais on peut s'en inspirer) mais du code de test. Mon prochain *pas* débute donc à l'étape *Red*. Si je reviens sur l'exemple de la marche vers Paris, je constate que je ne suis pas arrivé à Paris, alors, je me fixe le prochain objectif qui va m'en rapprocher. Je décide donc du pas qui va me rapprocher de ma destination. 
+
+Dans le code, c'est pareil. J'écris le prochain test qui va me permettre d'avancer. Il doit me mener de ma situation actuelle à l'étape juste après.
+
+Puis je passe à la phase *Green*. Dans le cas de la marche, c'est effectuer le pas que je viens de décider. Dans le cas du développement, c'est écrire le petit bout de code qui va me permettre de passer à l'état *Tous les tests passent*.
+
+Avec cette approche, on constate que TDD est aussi un processus de développement **incrémental**.
+
+Maintenant que j'ai expliqué ce qu'est TDD pour moi, je vais aborder ce qu'il n'est pas pour moi.
 
 ### Ce n'est pas une méthode de test
 TDD ne sert pas à tester son code. C'est un processus d'écriture du code. 
@@ -99,6 +124,8 @@ Au final, si on se réfère à ma vision, je pense que TDD est assez simple à a
 Les freins que je vois à l'acquisition de TDD sont les suivants : 
 - on pense qu'on ne peut pas faire de TDD sans avoir toutes les compétences annexes (design, refactoring, testing, etc...)
 - on a peur de perdre du temps en prenant le temps de bien faire les choses, car effectivement, l'un des enjeux de TDD, c'est de pouvoir ralentir le temps.
+
+Il y a cependant une difficulté, mais elle n'est pas un frein, c'est l'aspect incrémental de TDD. Choisir le bon baby step est très compliqué. C'est l'expérience qui te permettra de choisir le bon. Mais faire un pas trop gros n'empêche pas de faire du TDD, cela fait juste perdre du temps.
 
 Voilà, tu connais ma vision de TDD. Tous les articles que j'écrirais à ce sujet se baseront sur celui-ci. Je le complèterai au fur et à mesure que je verrai des points apparaître.
 
