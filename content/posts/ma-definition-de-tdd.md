@@ -15,7 +15,7 @@ Cette page va me servir pour te donner MA définition de TDD. Elle sera un pré-
 
 ## Définition générale
 
-Les deux notions suivantes sont les bases de ma définition de TDD. Il s'agit de Red - Green - Refactoring et des 3 lois de TDD. Je vais d'abord les présenter d'un point de vue général, et ensuite, j'expliquerai ma vision des choses.
+Les deux notions suivantes sont la base de ma définition de TDD. Il s'agit de Red - Green - Refactoring et des 3 lois de TDD. Je vais d'abord les présenter d'un point de vue général, et ensuite, j'expliquerai ma vision des choses.
 
 ### Red - Green - Refactoring
 
@@ -29,7 +29,7 @@ On arrive alors dans l'étape *Green*. On peut entrer dans cette étape seulemen
 
 Et arrive enfin la dernière étape, celle du *Refactoring*. On peut y rentrer seulement si on est dans l'état *Tous les tests passent*, et là, l'objectif, c'est de ne jamais sortir de cet état.
 
-Et une fois qu'on y est, il n'est plus question d'aller le plus vite possible. Au contraire, le temps s'est arrêté et on peut essayer de faire les choses du mieux que l'on peut. On améliore le code. On supprime le code que l'on peut supprimer. On fait les choses bien. Et lorsqu'on pense avoir fait tout ce qu'il y a à faire, on peut recommencer le cycle et passer à l'étapre *Red*.
+Une fois dans cette étape, il n'est plus question de se hâter. Au contraire, le temps s'est arrêté et on peut essayer de faire les choses du mieux que l'on peut. On améliore le code. On supprime le code que l'on peut supprimer. On fait les choses bien. Et lorsqu'on pense avoir fait tout ce qu'il y a à faire, on peut recommencer le cycle et passer à l'étapre *Red*.
 
 J'associe tout le temps le cycle Red - Green - Refactoring aux 3 lois de TDD, car celles-ci apportent un complément d'information sur la signification de l'état *Un seul test échoue*.
 
@@ -60,7 +60,7 @@ C'est ce que j'applique tous les jours, mais je te propose de pousser la vision 
 
 ## Ma vision
 
-J'essaie constamment de revisiter le cycle Red - Green - Refactoring. Si tu as déjà échangé avec moi, tu constateras que je l'ai formulé de plusieurs manières différentes, j'ai créé des schémas du cycle avec plus d'étapes, plus d'états. Mais je reste quand même très fortement attaché aux deux concepts que l'on a vu plus haut.
+Je challenge régulièrement le concept du cycle Red - Green - Refactoring. Si tu as déjà échangé avec moi, tu constateras que je l'ai formulé de plusieurs manières différentes, j'ai créé des schémas du cycle avec plus d'étapes, plus d'états. Mais je reste quand même très fortement attaché aux deux concepts que l'on a vu plus haut.
 
 ### La véritable essence de TDD
 
@@ -107,7 +107,7 @@ Mais vu qu'il a une excellente synergie avec les tests automatiques, c'est un he
 
 Faire du TDD et savoir écrire des tests sont deux compétences différentes. Elles sont complémentaires, certes, mais elles sont différentes.
 
-Contrairement à TDD, la compétence *Savoir écrire des tests* est compliquée à acquérir car il faut de l'expérience
+Contrairement à TDD, la compétence *Savoir écrire des tests* nécessite une expérience plus approfondie.
 
 ### Ce n'est pas une méthode de design
 Je ne considère pas TDD comme une méthode de design de code. Pourquoi ? Tout simplement parce que si une personne ne sait pas designer du code, TDD ne lui sera pas d'un grand secours.
@@ -118,7 +118,7 @@ La compétence *savoir écrire des tests automatiques* fonctionne aussi en syner
 
 Comme elle, la compétence *design du code* est complexe à acquérir. 
 
-### TDD, c'est simple
+### TDD, simple à apprendre, difficile à maîtriser
 Au final, si on se réfère à ma vision, je pense que TDD est assez simple à apprendre. Il suffit de suivre un cycle assez bien documenté et 3 lois assez explicites.
 
 Les freins que je vois à l'acquisition de TDD sont les suivants : 
@@ -126,6 +126,12 @@ Les freins que je vois à l'acquisition de TDD sont les suivants :
 - on a peur de perdre du temps en prenant le temps de bien faire les choses, car effectivement, l'un des enjeux de TDD, c'est de pouvoir ralentir le temps.
 
 Il y a cependant une difficulté, mais elle n'est pas un frein, c'est l'aspect incrémental de TDD. Choisir le bon baby step est très compliqué. C'est l'expérience qui te permettra de choisir le bon. Mais faire un pas trop gros n'empêche pas de faire du TDD, cela fait juste perdre du temps.
+
+Je finirai donc avec cette phrase : 
+
+> TDD est simple à apprendre, difficile à maîtriser...
+
+J'encourage vivement les personnes qui souhaite acquérir cette compétence à la pratiquer dès maintenant. Même si l'approche est naïve, mal exécutée, sans test, l'approche itérative et incrémentale de TDD t'aidera dans tes projets de développement. Avec le temps et l'expérience, tu pourras commencer à y intégrer des tests automatiques, pratiquer un meilleur refactoring, etc...
 
 Voilà, tu connais ma vision de TDD. Tous les articles que j'écrirais à ce sujet se baseront sur celui-ci. Je le complèterai au fur et à mesure que je verrai des points apparaître.
 
