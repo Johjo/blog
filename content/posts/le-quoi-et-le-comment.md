@@ -4,7 +4,7 @@ date: 2024-02-07T23:28:11+01:00
 comments:
   host: mastodon.social
   username: johjo
-  id: 
+  id: 111892793301822054
 ---
 
 Lorsqu'on apprend à développer, la première chose que l'on découvre, c'est le **Comment**. On apprend à diriger l'ordinateur en écrivant du code.
@@ -77,3 +77,10 @@ Heureusement, nous avons à disposition deux outils très simple pour créer des
 Le nom de la variable ou de la fonction peut exprimer le **Quoi** et la valeur de la variable ou le contenu de la fonction peut exprimer le **Comment**.
 
 La fonction est plus pratique car elle permet de masquer le contenu, contrairement à la variable qui doit rester très proche de sa valeur.
+
+## Pour finir
+Il est primordial d'apprendre à distinguer les différents niveaux d'abstractions et à ne pas les mélanger.
+
+Sans cette compétence, le code que l'on écrit risque d'être compliqué à maintenir et à faire évoluer.
+
+S'y habituer le plus rapidement possible, c'est se simplifier la vie pour les dizaines de milliers d'heures que nous allons passer à coder.
