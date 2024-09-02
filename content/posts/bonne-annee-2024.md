@@ -22,4 +22,4 @@ Mais surtout, je souhaite que ce blog soit un début de conversation entre toi e
 
 Qui que tu sois, si tu as envie d'apprendre ou de m'apprendre des choses, tu es au bon endroit.
 
-Par quoi pourrais-je commencer ? 
+Par quoi pourrais-je commencer ? ?
